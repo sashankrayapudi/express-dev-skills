@@ -7,7 +7,7 @@ var skillsCtrl = require('../controllers/skills')
 router.get('/', skillsCtrl.index)
 
 // GET /skills/:id
-router.get('/:id')
+router.get('/:id', skillsCtrl.show)
 
 
 

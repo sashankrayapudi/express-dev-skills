@@ -8,9 +8,19 @@ const skills = [
 ];
 
 module.exports = {
-  getAll
+  getAll,
+  getOne
 };
 
 function getAll() {
   return skills;
+}
+
+
+function getOne(id) {
+  // convert to number
+  id = parseInt(id);
+  return skills.find(function(skill) {
+    return skill.id === id;
+  });
 }
